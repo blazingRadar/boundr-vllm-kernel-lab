@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenchmarkManifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "model_family",
+    "hardware",
+    "software",
+    "route_flags",
+    "compile_flags",
+    "experiment_axis",
+    "workload",
+    "capture"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "model_family": {"type": "string"},
+    "model_id": {"type": "string"},
+    "hardware": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gpu", "rocm_version"],
+      "properties": {
+        "gpu": {"type": "string"},
+        "rocm_version": {"type": "string"}
+      }
+    },
+    "software": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vllm_commit", "aiter_commit"],
+      "properties": {
+        "vllm_commit": {"type": "string"},
+        "aiter_commit": {"type": "string"}
+      }
+    },
+    "route_flags": {"type": "object"},
+    "compile_flags": {"type": "object"},
+    "experiment_axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path_mode", "target_surface"],
+      "properties": {
+        "path_mode": {"type": "string"},
+        "target_surface": {"type": "string"}
+      }
+    },
+    "workload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["batch_size", "prompt_tokens", "generation_tokens"],
+      "properties": {
+        "batch_size": {"type": "integer", "minimum": 1},
+        "prompt_tokens": {"type": "integer", "minimum": 1},
+        "generation_tokens": {"type": "integer", "minimum": 1}
+      }
+    },
+    "capture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collect_trace", "trace_tool", "collect_backend_route"],
+      "properties": {
+        "collect_trace": {"type": "boolean"},
+        "trace_tool": {"type": "string"},
+        "collect_backend_route": {"type": "boolean"}
+      }
+    }
+  }
+}

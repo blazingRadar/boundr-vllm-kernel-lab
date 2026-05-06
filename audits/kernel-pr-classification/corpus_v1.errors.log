@@ -1,0 +1,19 @@
+err vllm-project/vllm deepseek-v3: rc=1 gh: API rate limit exceeded for user ID 259480833. If you reach out to GitHub Support for help, please include the request ID E8B6:2CA52C:7B52D0E:7D747D3:69F62167 and timestamp 2026-05-02 16:08:07 UTC
+err vllm-project/vllm dsv3: rc=1 gh: API rate limit exceeded for user ID 259480833. If you reach out to GitHub Support for help, please include the request ID E8BA:2CA52C:7B52EEC:7D749C7:69F62167 and timestamp 2026-05-02 16:08:07 UTC
+vllm-project/vllm kimi-k2: total=71 fetched=6
+vllm-project/vllm qwen3-moe: total=241 fetched=6
+vllm-project/vllm qwen3-next: total=177 fetched=6
+vllm-project/vllm gpt-oss: total=337 fetched=6
+ROCm/aiter deepseek-v3: total=11 fetched=6
+ROCm/aiter dsv3: total=11 fetched=6
+ROCm/aiter kimi-k2: total=11 fetched=6
+ROCm/aiter qwen3-moe: total=15 fetched=6
+ROCm/aiter qwen3-next: total=8 fetched=6
+ROCm/aiter gpt-oss: total=21 fetched=6
+ROCm/ATOM deepseek-v3: total=3 fetched=3
+ROCm/ATOM dsv3: total=1 fetched=1
+ROCm/ATOM kimi-k2: total=23 fetched=6
+ROCm/ATOM qwen3-moe: total=11 fetched=6
+ROCm/ATOM qwen3-next: total=19 fetched=6
+ROCm/ATOM gpt-oss: total=31 fetched=6
+TOTAL UNIQUE: 79

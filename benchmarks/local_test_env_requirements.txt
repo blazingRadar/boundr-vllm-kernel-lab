@@ -1,0 +1,4 @@
+tblib
+gguf
+pyzmq
+openai-harmony

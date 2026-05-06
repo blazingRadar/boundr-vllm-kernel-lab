@@ -1,0 +1,38 @@
+{
+  "run_id": "dsk-exp-0001",
+  "model_family": "deepseek_family",
+  "model_id": "replace-me",
+  "hardware": {
+    "gpu": "replace-me",
+    "rocm_version": "replace-me"
+  },
+  "software": {
+    "vllm_commit": "6841f5dc77e9200a2fa45a4bf935b23bd843bf30",
+    "aiter_commit": "replace-me"
+  },
+  "route_flags": {
+    "VLLM_ROCM_USE_AITER": true,
+    "VLLM_ROCM_USE_AITER_LINEAR": true,
+    "VLLM_ROCM_USE_AITER_MOE": true,
+    "VLLM_ROCM_USE_AITER_MLA": true,
+    "VLLM_ROCM_USE_AITER_TRITON_GEMM": true,
+    "VLLM_ROCM_USE_AITER_FP4_ASM_GEMM": false
+  },
+  "compile_flags": {
+    "fuse_mla_dual_rms_norm": false
+  },
+  "experiment_axis": {
+    "path_mode": "tgemm_on_dynamic_mxfp4_off",
+    "target_surface": "attention_projection"
+  },
+  "workload": {
+    "batch_size": 1,
+    "prompt_tokens": 1024,
+    "generation_tokens": 256
+  },
+  "capture": {
+    "collect_trace": true,
+    "trace_tool": "rocprof",
+    "collect_backend_route": true
+  }
+}
