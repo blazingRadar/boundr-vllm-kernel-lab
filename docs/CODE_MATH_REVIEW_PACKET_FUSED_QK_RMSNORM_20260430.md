@@ -2,7 +2,7 @@
 
 ## File
 
-- [fused_qk_norm_rope_cache_quant.py](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py)
+- `aiter/ops/fused_qk_norm_rope_cache_quant.py`
 
 ## Why This File
 
@@ -16,17 +16,17 @@ It is useful because:
 ## Critical Region
 
 Start here:
-- [fused_qk_norm_rope_cache_quant.py:66](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py:66)
+- `aiter/ops/fused_qk_norm_rope_cache_quant.py:66`
 
 Important lines:
 - fallback threshold:
-  - [66](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py:66)
+  - `66`
 - runtime branch:
-  - [69](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py:69)
+  - `69`
 - fallback path to separate RMSNorm calls:
-  - [78](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py:78)
+  - `78`
 - fused kernel path:
-  - [83](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py:83)
+  - `83`
 
 ## What The Math Is Doing
 

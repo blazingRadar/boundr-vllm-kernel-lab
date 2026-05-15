@@ -3,7 +3,7 @@
 This lab is intentionally isolated.
 
 Hard rules:
-- no code changes outside `/home/blazingradar/boundr-vllm-kernel-lab`
+- no code changes outside this repository
 - no edits to:
   - `boundr-adversarial-gaming-lab`
   - `boundr-cicd-governance-lab`
@@ -11,7 +11,7 @@ Hard rules:
   - any other existing Boundr lab
 - no shared mutable scripts across labs
 - no copy-forward of accepted runner code into this lab without explicit user direction
-- no claims that private Boundr kernel results transfer directly to ROCm/vLLM GPU kernels
+- no claims that prior Linux-control-plane kernel results transfer directly to ROCm/vLLM GPU kernels
 
 Allowed inputs:
 - public GitHub repos

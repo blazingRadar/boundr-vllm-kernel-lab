@@ -8,7 +8,7 @@ Measure and instrument the hidden decision geometry around:
 - Quark native vs emulation route choice
 
 File:
-- [fused_qk_norm_rope_cache_quant.py](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/aiter/aiter/ops/fused_qk_norm_rope_cache_quant.py)
+- `aiter/ops/fused_qk_norm_rope_cache_quant.py`
 
 ## Why This Is A Good Next Runtime Target
 

@@ -3,9 +3,9 @@
 ## Scope
 
 This is a static audit of public AITER tuned-config assets already present in:
-- `workspaces/aiter/aiter/configs/`
-- `workspaces/aiter/aiter/configs/model_configs/`
-- `workspaces/aiter/op_tests/op_benchmarks/triton/model_benchmarking_tool/model_shapes.json`
+- `aiter/aiter/configs/` in a local ignored checkout of `ROCm/aiter`
+- `aiter/aiter/configs/model_configs/` in that checkout
+- `aiter/op_tests/op_benchmarks/triton/model_benchmarking_tool/model_shapes.json` in that checkout
 
 ## Strong Finding
 

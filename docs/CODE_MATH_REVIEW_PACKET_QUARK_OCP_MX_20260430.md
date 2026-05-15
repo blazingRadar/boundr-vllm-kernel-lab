@@ -2,7 +2,7 @@
 
 ## File
 
-- [quark_ocp_mx.py](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py)
+- `vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py`
 
 ## Why This File
 
@@ -17,19 +17,19 @@ It is the best first file for quants to review because it is close to the actual
 ## Critical Region
 
 Start here:
-- [quark_ocp_mx.py:205](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:205)
+- `vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:205`
 
 Important lines:
 - emulation decision:
-  - [205](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:205)
+  - `205`
 - missing-kernel dependency gate:
-  - [214](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:214)
+  - `214`
 - emulation warning path:
-  - [222](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:222)
+  - `222`
 - dynamic MXFP4 weight processing:
-  - [261](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:261)
+  - `261`
 - runtime path split:
-  - [271](/home/blazingradar/boundr-vllm-kernel-lab/workspaces/vllm-upstream/vllm/model_executor/layers/quantization/quark/schemes/quark_ocp_mx.py:271)
+  - `271`
 
 ## What The Math Is Doing
 

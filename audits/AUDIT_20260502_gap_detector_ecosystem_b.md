@@ -1,14 +1,14 @@
-# AUDIT 2026-05-02 — Launch-Readiness Gap Detector — AMD Internal-Perspective (Auditor B)
+# AUDIT 2026-05-02 — Launch-Readiness Gap Detector — Ecosystem-Seam Perspective (Auditor B)
 
 ## Charter
 
-Test the user's concern: "this seems non-trivial for them not to be doing this already." Distinguish three explanations:
+Test whether the detector's contribution is already covered by public AMD/vLLM process, or whether there is a real ecosystem-seam gap. Distinguish three explanations:
 
-1. AMD already does this internally under different names.
+1. AMD or vLLM already does this under different names.
 2. AMD considered it and the binding constraint is something else.
 3. The org structure makes it nobody's job, so it really is an external opening.
 
-Independent of Auditor A. AMD-internal angle only.
+Independent of Auditor A. Ecosystem-seam angle only.
 
 ---
 
@@ -72,9 +72,9 @@ The detector's value is therefore narrower than the V1 doc claims: it is most us
 
 ---
 
-## Cost-of-Publication Risk
+## Public Framing Risk
 
-**Real but manageable.** A retroactive-classification headline like "for 4 of 5 recent launches the dominant gap was dispatch-route, meaning AMD's hardware was capable on day 0 but software shipped wrong path" is **PR-toxic to AMD if framed as indictment**, and that is one credible reason no one inside has published it. The lab should pre-empt this by framing as "diagnostic instrument that helps AMD ship faster," not "scorecard of past misses." Show the 944e138 case as a **success story of fast closure once detected**, not as "AMD took N months to find this."
+**Real but manageable.** A retroactive-classification headline like "for 4 of 5 recent launches the dominant gap was dispatch-route, meaning the hardware was capable on day 0 but software shipped the wrong path" would be counterproductive if framed as indictment. The lab should frame the detector as a diagnostic instrument that helps maintainers ship faster, not as a scorecard of past misses. Show the 944e138 case as a success story of fast closure once detected.
 
 ---
 
@@ -84,7 +84,7 @@ Ranked:
 
 1. **PR-template / RFC proposal to vLLM upstream**, not AMD. Add a "ROCm gap class" required field to ROCm-tagged perf-bug issues with the three values. This survives the org-seam problem because it lives in vLLM's tree where dispatch defects actually get filed. Highest leverage, lowest political cost. **Recommended primary surface.**
 2. **Research-style technical blog post** with retroactive classification of 3 launches (DeepSeek-V3, Kimi-K2, Qwen3-MoE) framed as instrument validation. Avoid scorecard framing. Cite 944e138 as the exemplar. Medium leverage, low risk.
-3. **Internal pitch to AMD perf leadership.** Likely outcome: "we know, we're working on it." Do not lead with this.
+3. **Maintainer discussion after more evidence.** Likely outcome without stronger artifacts: "we know, we're working on it." Do not lead with this.
 4. **Academic paper.** Too slow; the seam will close (vLLM RFC #21805 already moves this direction) before publication.
 
 The lab should also consider that the dispatch-route class may **be solved structurally** within 6–12 months if vLLM's unified backend auto-selection RFC lands. The window for the detector being maximally novel is now, not 2027.

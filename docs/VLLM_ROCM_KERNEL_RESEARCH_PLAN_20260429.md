@@ -92,6 +92,6 @@ Do only:
 
 Do not yet:
 - claim kernel improvements
-- clone or modify any private Boundr lab
+- clone or modify any unrelated research lab
 - overfit to a single performance anecdote
 - center the lane on upstream PR automation

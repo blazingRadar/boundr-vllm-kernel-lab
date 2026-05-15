@@ -1,18 +1,18 @@
 # Launch-Readiness Gap Detector V1
 
-## Thesis
+## Historical Thesis
 
-For a new model release on ROCm/vLLM, launch lag should be classified into one of three primary gap classes:
+For a new model release on ROCm/vLLM, launch lag can often be usefully inspected through three primary gap classes:
 
 1. `kernel_coverage_gap`
 2. `tuned_config_gap`
 3. `dispatch_route_gap`
 
-This is a strictly better framing than treating all lag as a tuning problem.
+This framing is better than treating all lag as a tuning problem, but later audits and the 79-PR classification corpus showed that it is not exhaustive. Treat this document as the V1 hypothesis that the later audit corpus stress-tested.
 
 ## Why This Reframe Exists
 
-The lab's own target commit set supports it:
+The lab's initial target commit set motivated it:
 
 - `944e138...`
   - route/policy fix
@@ -26,9 +26,7 @@ The lab's own target commit set supports it:
 - `ec8ab9d...`
   - quant-path integration/policy
 
-So the public signal suggests:
-- coverage + routing are dominant
-- tuning is secondary
+In this small initial sample, the public signal suggested coverage and routing were load-bearing, with tuning secondary. Later corpus results narrowed that statement: tuning remains important, and a large `OTHER` bucket means correctness, distributed-runtime, CI/build, and model-support classes must also be tracked.
 
 ## Detector Inputs
 

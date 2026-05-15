@@ -2,7 +2,7 @@
 
 Date: 2026-04-30
 Topic: Resolution of the prior session's "no tune script for candidates A/B/C/D" blocker
-Source of record: live verification against `boundr-vllm-kernel-lab/workspaces/aiter` HEAD
+Source of record: live verification against a local ignored checkout of `ROCm/aiter`
 Audit class: false-alarm correction (prior conversation made an overstated claim; this memo retracts it with verification)
 
 ## Background

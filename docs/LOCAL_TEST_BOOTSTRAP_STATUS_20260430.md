@@ -8,7 +8,7 @@ Track how far the lab got in making the cloned `vllm-upstream` test surfaces run
 
 Lab-local virtual environment:
 
-- `/home/blazingradar/boundr-vllm-kernel-lab/.venv`
+- repository-local `.venv`
 
 Lab-local requirement tracker:
 

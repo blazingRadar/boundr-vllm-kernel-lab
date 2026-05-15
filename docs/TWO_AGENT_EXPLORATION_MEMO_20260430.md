@@ -20,7 +20,7 @@ This work stayed inside the existing public-only lab boundary:
 - public `vllm-project/vllm`
 - public `ROCm/aiter`
 - no other Boundr lab touched
-- no private AMD code
+- no non-public AMD code
 - no hardware-backed claims
 
 ## Inputs
