@@ -8,7 +8,7 @@ This repository is a public research artifact for ROCm/vLLM launch-readiness ana
 - Commit audits and touched-file ledgers for selected public commits.
 - A pre-registered 79-PR classification corpus with two independent classifier outputs.
 - Benchmark, trace, and commit-audit templates.
-- Lightweight scripts for static coverage analysis and trace-collection scaffolding.
+- Lightweight scripts for static coverage analysis against a local AITER checkout and trace-collection scaffolding.
 
 ## Claim Boundary
 

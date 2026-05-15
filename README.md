@@ -65,7 +65,7 @@ The public repo is intentionally lightweight. The local verification surface is:
 ```bash
 python3 -m py_compile scripts/analyze_aiter_config_coverage.py
 bash -n scripts/collect_rocm_trace_stub.sh
-python3 scripts/analyze_aiter_config_coverage.py
+python3 scripts/analyze_aiter_config_coverage.py --help
 ```
 
-Full ROCm/vLLM hardware validation is outside this repository's completed evidence. This lab records the method and the audit trail, not a shipped optimization.
+The coverage script can summarize a local `ROCm/aiter` checkout when run with `--aiter-root /path/to/aiter`. Full ROCm/vLLM hardware validation is outside this repository's completed evidence. This lab records the method and the audit trail, not a shipped optimization.
