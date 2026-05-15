@@ -19,7 +19,7 @@ That framing is useful, but the lab does not present it as a settled causal acco
 - The later corpus found a large `OTHER` bucket, so correctness, distributed-runtime, CI/build, and model-support issues also matter.
 - Hardware trace evidence is still required before making optimization or performance claims.
 
-## What This Lab Proved
+## What This Lab Shows
 
 - Public ROCm/vLLM/AITER commits can be audited into repeatable gap classes with evidence excerpts.
 - The original four-commit detector was too small to support broad dominance claims.

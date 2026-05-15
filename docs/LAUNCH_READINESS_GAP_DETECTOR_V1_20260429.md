@@ -38,11 +38,16 @@ In this small initial sample, the public signal suggested coverage and routing w
 
 ## Detector Outputs
 
+Supersession note: these V1 outputs are historical. Later methodology audit recommended adding `unknown`, `confidence`, and `requires_trace=true`, because route-vs-tune can be unidentifiable without trace evidence.
+
 For a given model release, emit:
 
 - `dominant_gap_class`
 - `secondary_gap_classes`
 - `evidence`
+- `unknown` when public evidence is insufficient
+- `confidence`
+- `requires_trace`
 - `likely_close_surface`
   - AITER kernel work
   - AITER tuned-config work

@@ -1,5 +1,7 @@
 # Audit Ready Status
 
+Note: this is a 2026-04-30 handoff snapshot. It was later narrowed by the 2026-05-02 methodology and prior-art audits plus the 79-PR classification corpus. Read it as the state before those later stress tests, not as the final claim boundary.
+
 ## Current State
 
 The lab now has:
